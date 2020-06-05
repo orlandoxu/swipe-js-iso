@@ -219,7 +219,8 @@
     }
 
     function stop() {
-      delay = options.auto || 0;
+      // delay = options.auto || 0;
+      delay = options.auto > 0 ? options.auto : 0;
       clearTimeout(interval);
     }
 
